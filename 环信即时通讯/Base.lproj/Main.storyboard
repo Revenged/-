@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0PB-pk-yQt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="CCh-Rb-UxR">
+            <objects>
+                <navigationController id="0PB-pk-yQt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rja-e1-17C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Mi1-kJ-QuZ" kind="relationship" relationship="rootViewController" id="YPa-DS-ATR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4CR-T5-7um" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1206" y="-175.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iYE-fm-POK">
+            <objects>
+                <viewController id="Mi1-kJ-QuZ" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="782-S0-lym"/>
+                        <viewControllerLayoutGuide type="bottom" id="vIH-zr-rLr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1WW-Tj-gOx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B81-Xw-BAU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.94469377038940106" blue="0.32759754642059091" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="登陆"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="162" y="236" width="78" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="login:" destination="Mi1-kJ-QuZ" eventType="touchUpInside" id="ddn-a3-lAg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7F-RW-3n5" colorLabel="IBBuiltInLabel-Red">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.25329588269999997" blue="0.8057181886" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="注册"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="162" y="145" width="78" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="getcode:" destination="Mi1-kJ-QuZ" eventType="touchUpInside" id="wOf-lZ-Fye"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrg-e6-smO">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.9586553057744599" green="0.43850893194917628" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="聊天"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="168" y="325" width="72" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="sendMessage:" destination="Mi1-kJ-QuZ" eventType="touchUpInside" id="sYF-4f-vZI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="B81-Xw-BAU"/>
+                                <exclude reference="e7F-RW-3n5"/>
+                                <exclude reference="Xrg-e6-smO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="B81-Xw-BAU"/>
+                                <include reference="e7F-RW-3n5"/>
+                                <include reference="Xrg-e6-smO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="QQw-5B-6kP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YFP-2g-szO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-363" y="-186.75"/>
+        </scene>
+    </scenes>
+</document>
